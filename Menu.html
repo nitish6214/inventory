@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Inventory</title>
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Bootstrap core css -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Responsive styles -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Custom button styles -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .btn-hover {
+      width: 200px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      height: 55px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+      border-radius: 50px;
+      transition: all .4s ease-in-out;
+    }
+
+    .btn-hover.color-1 {
+      background-image: linear-gradient(
+        45deg,
+        #ff6a00,
+        #ee0979,
+        #ff6a00,
+        #ee0979
+      );
+      background-size: 300% 100%;
+      box-shadow: 0 8px 20px rgba(238, 9, 121, 0.6);
+      animation: shimmer 3s ease-in-out infinite;
+      color: white;
+      transition: background-position 0.4s ease-in-out, transform 0.3s ease;
+    }
+
+    .btn-hover:hover {
+      background-position: right center;
+      transform: scale(1.05);
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section -->
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_nav">
+            <a href="tel:+91 9135258617">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span> Call : +91 9135258617 </span>
+            </a>
+            <a href="mailto:rajashish33118@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span> Email : nk1140730@gmail.com </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span> Inventory </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="Menu.html">Menu</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Buttons Section -->
+  <div class="buttons">
+    <button type="button" class="btn-hover color-1" onclick="window.open('Inventory.php')">Show Inventory</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Customer.php')">Show Customer</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Delivery.php')">Show Delivery</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Location.php')">Show Location</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Deliverydetail.php')">Show Delivery Detail</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Order1.php')">Show Order</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Orderdetail.php')">Show Order Detail</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Product.php')">Show Product</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Provider.php')">Show Provider</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Specialsearch.html')">Show Special Search</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Transfer.php')">Show Transfer</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Warehouse.php')">Show Warehouse</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Login.php')">Show Login</button>
+    <button type="button" class="btn-hover color-1" onclick="window.open('Register.php')">Show Register</button>
+  </div>
+
+  <!-- info section -->
+  <section class="info_section">
+    <div class="container">
+      <h4>Get In Touch</h4>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="info_items">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="https://maps.app.goo.gl/DWGcc8yJyhtVD4er5">
+                  <div class="item">
+                    <div class="img-box"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <p>Location</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="tel:+91 9135258617">
+                  <div class="item">
+                    <div class="img-box"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <p>+91 9135258617</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="https://mail.google.com/mail/u/nk1140730@email.com/#inbox?compose=new">
+                  <div class="item">
+                    <div class="img-box"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <p>nk1140730@gmail.com</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-box">
+      <h4>Follow Us</h4>
+      <div class="box">
+        <a href="https://www.facebook.com/profile.php?id=100029540610573">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/channel/UCvHxmMBO1oIe-tBtTaTipMw">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/ashish_mahto_91/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>&copy; <span id="displayDateYear"></span> All Rights Reserved By
+        <a href="https://Tipnitish.in/">Design By Nitish Kumar</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Specialsearch</title>
+    <style>
+        button, input[type="submit"], input[type="button"] {
+            background-color: rgb(7, 8, 7);
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+            border-bottom: 2px solid red;
+        }
+
+        input[type="text"] {
+           
+            padding: 10px;
+            margin: 5px 0px;
+            box-sizing: border-box;
+            border-radius: 30px;
+            border: none;
+            border-bottom: 2px solid red;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            backdrop-filter: blur(60px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px auto;
+        }
+
+        body {
+            background-color: #80a2e0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-table {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .form-label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+            font-size: 18px;
+        }
+
+        select {
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="Order1.php" class="form-table">
+            <div class="form-label">Order</div>
+            <select name="s">
+                <option value="id">ID</option>
+                <option value="date1">DATE1</option>
+            </select>
+            <input type="text" name="t1" placeholder="Enter value">
+            <input type="submit" name="b6" value="Search">
+        </form>
+
+        <form method="post" action="Delivery.php" class="form-table">
+            <div class="form-label">Delivery</div>
+            <select name="s">
+                <option value="id">ID</option>
+                <option value="status">STATUS</option>
+            </select>
+            <input type="text" name="t1" placeholder="Enter value">
+            <input type="submit" name="b6" value="Search">
+        </form>
+
+        <form method="post" action="Customer.php" class="form-table">
+            <div class="form-label">Customer</div>
+            <select name="s">
+                <option value="id">ID</option>
+                <option value="nm">Name</option>
+                <option value="address">Address</option>
+            </select>
+            <input type="text" name="t1" placeholder="Enter value">
+            <input type="submit" name="b6" value="Search">
+        </form>
+
+        <form method="post" action="Deliverydetail.php" class="form-table">
+            <div class="form-label">Delivery Detail</div>
+            <select name="s">
+                <option value="id">ID</option>
+                <option value="qty">QUANTITY</option>
+                <option value="expdate">EXPDATE</option>
+                <option value="actdate">ACTDATE</option>
+            </select>
+            <input type="text" name="t1" placeholder="Enter value">
+            <input type="submit" name="b6" value="Search">
+        </form>
+
+        <form method="post" action="Inventory.php" class="form-table">
+            <div class="form-label">Inventory</div>
+            <select name="s">
+                <option value="id">ID</option>
+                <option value="qtyavail">QTYAVAI</option>
+                <option value="minstock">MINSTOCK</option>
+                <option value="maxstock">MAXSTOCK</option>
+            </select>
+            <input type="text" name="t1" placeholder="Enter value">
+            <input type="submit" name="b6" value="Search">
+        </form>
+
+        <form method="post" action="Location.php" class="form-table">
+            <div class="form-label">Location</div>
+            <select name="s">
+                <option value="id">ID</option>
+                <option value="nm">NAME</option>
+                <option value="address">ADDRESS</option>
+            </select>
+            <input type="text" name="t1" placeholder="Enter value">
+            <input type="submit" name="b6" value="Search">
+        </form>
+
+        <form method="post" action="Orderdetail.php" class="form-table">
+            <div class="form-label">Order Detail</div>
+            <select name="s">
+                <option value="id">ID</option>
+                <option value="qty">QUANTITY</option>
+                <option value="adate">ADATE1</option>
+                <option value="rdate">RDATE1</option>
+            </select>
+            <input type="text" name="t1" placeholder="Enter value">
+            <input type="submit" name="b6" value="Search">
+        </form>
+
+        <form method="post" action="Product.php" class="form-table">
+            <div class="form-label">Product</div>
+            <select name="s">
+                <option value="id">ID</option>
+                <option value="barcode">BARCODE</option>
+                <option value="name">NAME</option>
+                <option value="desc1">DESC1</option>
+                <option value="category">CATEGORY</option>
+                <option value="qty">QUANTITY</option>
+                <option value="weight">WEIGHT</option>
+                <option value="refrigerated">REFRIGERATED</option>
+            </select>
+            <input type="text" name="t1" placeholder="Enter value">
+            <input type="submit" name="b6" value="Search">
+        </form>
+
+        <form method="post" action="Provider.php" class="form-table">
+            <div class="form-label">Provider</div>
+            <select name="s">
+                <option value="id">ID</option>
+                <option value="nm">NAME</option>
+                <option value="address">ADDRESS</option>
+            </select>
+            <input type="text" name="t1" placeholder="Enter value">
+            <input type="submit" name="b6" value="Search">
+        </form>
+
+        <form method="post" action="Transfer.php" class="form-table">
+            <div class="form-label">Transfer</div>
+            <select name="s">
+                <option value="id">ID</option>
+                <option value="qty">QUANTITY</option>
+                <option value="sdate">SDATE1</option>
+                <option value="rdate">RDATE1</option>
+            </select>
+            <input type="text" name="t1" placeholder="Enter value">
+            <input type="submit" name="b6" value="Search">
+        </form>
+
+        <form method="post" action="Warehouse.php" class="form-table">
+            <div class="form-label">Warehouse</div>
+            <select name="s">
+                <option value="id">ID</option>
+                <option value="nm">NAME</option>
+                <option value="isrefrigerated">ISREFRIGERATED</option>
+            </select>
+            <input type="text" name="t1" placeholder="Enter value">
+            <input type="submit" name="b6" value="Search">
+        </form>
+    </div>
+</body>
+</html>
